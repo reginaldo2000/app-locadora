@@ -43,10 +43,10 @@ class CategoriaController
             $categoria->nome = $data["nome"];
             $categoriaId = $categoria->save();
             if (!$categoriaId) {
-                setAlert("Erro ao cadastrar a nova categoria!");
+                setAlert("Erro ao salvar a nova categoria!");
                 $this->router->redirect("/categoria/show");
             }
-            setAlert("Categoria adicionada com sucesso!", "alert-success");
+            setAlert("Categoria salva com sucesso!", "alert-success");
             $this->router->redirect("/categoria/show");
         } catch (Exception $e) {
             echo $e->getMessage();

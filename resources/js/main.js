@@ -1,3 +1,21 @@
+(function () {
+    'use strict'
+
+    var forms = document.querySelectorAll('.needs-validation')
+
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+
 let buttonMenu = document.querySelector(".button-sl-menu");
 buttonMenu.addEventListener("click", function () {
     let navbar = document.querySelector(".navbar-sl-main");
@@ -40,8 +58,9 @@ editCategoria.forEach(function (element) {
 });
 
 
-const openModal = function(identificacao) {
+const openModal = function (identificacao) {
     let modal = new bootstrap.Modal(document.getElementById(identificacao));
     modal.toggle();
 };
+
 
