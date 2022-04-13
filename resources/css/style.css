@@ -1,0 +1,125 @@
+.login-body {
+    background-color: #112;
+}
+
+.login-card {
+    width: 350px;
+    margin: 20px auto;
+}
+
+.login-page-title {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #aaa;
+}
+
+header .img-logo {
+    width: 140px;
+}
+
+header .img-logo img {
+    width: 100%;
+}
+
+header .system-title {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+header .name-sl-user {
+    margin-top: -45px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.button-sl-menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    left: -4px;
+    top: 80px;
+    border-radius: 6px;
+    background-color: #112;
+    width: 40px;
+    height: 40px;
+    transition: 0.8s;
+}
+
+.button-sl-menu span {
+    display: block;
+    cursor: pointer;
+    transition: 0.8s;
+    color: #ccc;
+}
+
+.navbar-sl-main {
+    position: fixed;
+    z-index: 11;
+    width: 320px;
+    height: 100vh;
+    top: 0;
+    left: -320px;
+    background-color: #112;
+    transition: 0.8s;
+}
+
+.navbar-sl-main ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-sl-main ul li:hover {
+    background-color: #223;
+}
+
+.navbar-sl-main ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+    font-weight: 600;
+}
+.active-navbar-sl-main {
+    left: 0;
+    transition: 0.8s;
+}
+.active-button-sl-menu {
+    left: 316px;
+    transition: 0.8s;
+}
+.active-button-sl-menu span {
+    transform: rotate(180deg);
+    transition: 0.8s;
+}
+
+
+.content-sl-main {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 1px 0px 3px 2px #999;
+    margin: 20px auto;
+}
+
+.page-sl-title {
+    font-size: 20px;
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 15px;
+}
+
+/* classes auxiliares */
+.wdt-1000 {
+    width: 1000px;
+}
+.ml-1 {
+    margin-left: 10px;
+}

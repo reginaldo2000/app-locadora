@@ -1,0 +1,27 @@
+{
+    "name": "reginaldo2000/locadora",
+    "description": "projeto para estudo, uma aplicação para locação de dvd's",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reginaldo Cândido",
+            "email": "arcs.si3@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+           "source/Config.php",
+           "source/Session.php"
+        ]
+    },
+    "require": {
+        "coffeecode/router": "1.0.*",
+        "coffeecode/datalayer": "1.1.*",
+        "league/plates": "^3.4"
+    }
+}
